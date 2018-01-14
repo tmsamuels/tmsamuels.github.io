@@ -1,0 +1,509 @@
+<!DOCTYPE html> <!-- sets the doc type to html -->
+<html lang="en"> <!-- opening html tag -->
+ <head>
+    <meta charset="utf-8">
+    <title>Web Dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- sets the viewport scale size -->
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- links the html and css sheet together -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!-- adds custom font from the google fonts api (code from https://fonts.google.com/specimen/Lato?selection.family=Lato) -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- links html to font awesome css sheet for the home icon (code from http://fontawesome.io/get-started/) -->
+
+    <link rel="shortcut icon" href="images/favicon.ico"> <!-- sets the favicon of the site for IE (takes the .ico and displays it) -->
+    <link rel="icon" href="images/favicon.ico"> <!-- sets the favicon for every other browser -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- Relates to the smooth scrolling JS code (code from https://css-tricks.com/snippets/jquery/smooth-scrolling/) -->
+
+
+ </head>
+ 
+ <body>
+
+  <nav class="navtop"> <!-- the nav class that will be used for the navigation -->
+      <ul>
+        <li><a href="#toppage_link"><i class="fa fa-home" aria-hidden="true"></i></a></li> <!-- nav icon for the home page, an icon from font awesome (code from http://fontawesome.io/icon/home/) -->
+        <li><a href="#aboutus_link">About Us</a></li> <!-- nav text that links to the about us section -->
+        <li><a href="#glossarylink">Glossary</a></li> <!-- nav text that links to the glossary section -->
+        <li><a href="#comparisonlink">Comparison</a></li> <!-- nav text that links to the comparison section -->
+        <li><a href="#resourcelink">Resources</a></li> <!-- nav text that links to the resources section -->
+        <li><a href="#designlink">Design</a></li> <!-- nav text that links to the design section -->
+        <li><a href="#conclusionlink">Reflection</a></li> <!-- nav text that links to the reflection section -->
+      </ul>
+  </nav> <!-- end of nav -->
+
+  <header class="top_page" id="toppage_link"> <!-- header section of the site -->
+        <h1>Web Development Project</h1> <!-- website title within the header section -->
+  </header> <!-- end of header -->
+
+  <section class="about_us" id="aboutus_link"> <!-- about us section of site, id used so the nav can link to it -->
+
+    <article class="aboutus_article"> <!-- first article in the about us section -->
+        <h3>[About Us]</h3><br> <!-- h3 heading for section title -->
+        
+            <P>Welcome to the site, just below you will see information about the main developers of the site and some of the people that helped with the design aspects. If you have any questions about the site or Thomas then feel free to use the contact form.</P><br> <!-- paragraph tags and break tags (creates a break in the text) -->
+            <p>
+                Thomas Michael Samuels is currently a student at Northampton University, where he is studying Computer Science. 
+                He lives in Northampton. Before attending Northampton University he studied at Northampton College where he did a two year Level 3 Diploma in Computer Systems Support and Networking. 
+            </p>
+            <br>
+            <p>
+                Since a young age Thomas has been interested in computers and video games. One of his main pastimes is playing video games on PC with his friends. When Thomas isn’t gaming he often likes to spend time with his family doing a multitude of activities such as baking, hiking and cycling. 
+            </p>
+            <br>
+            <p>
+                He first became interested in the subject of computing during his time at secondary school, he found it so captivating that he decided to study it as one of his GCSE’s and eventually as an AS Level. 
+                He is studying for a degree in computing and is currently on a general pathway that does a bit of everything. He wishes to specialise in a specific area, but currently does not know what pathway to choose. His main interest is computer networks/communication, although this preference could change. <br><br>
+                Upon completion of his studies, Thomas would like a career in the computing industry although at the moment he is unsure what field he would like to work in. He would very much like to work in a field that he finds interesting and enjoyable.
+            </p>
+            <figure> <!-- figure tag that contain the images -->
+                <img src="images/tompic.jpg" alt="Image of Thomas Samuels"> <!-- link to an image in the images folder, has alt tags if the image cannot be displayed -->
+                <figcaption>Image of Thomas Samuels</figcaption> <!-- creates a text caption under the image -->
+            </figure>
+            <p class="ptitle">The video below features some of the websites that inspired Thomas & Mohammed.</p>
+            <video controls> <!-- sets up a html5 video with controls (fullscreen, play, stop) -->
+                <source src="video/webdevvideo.mp4" type="video/mp4"> <!-- source of the video -->
+                Your browser does not support the video tag. <!-- displayed when the video cannot be -->
+            </video> 
+
+    </article> <!-- end of the article -->
+
+    <article class="aboutus_article"> 
+      <h3>[The Team]</h3><br>
+     
+        <p>The following section contains information about the team member who worked with Thomas on the initial design for the site and helped to refine later designs.</p><br>
+
+        <p>
+                Mohammed Rahman Niyaz is currently a student at the University of Northampton, where he is studying general computing. He would like to specialise eventually, but currently does not know for sure what area to pick.     
+        </p>
+        <br>
+        <p>
+                He has a wide variety of interests and hobbies, but his main one is undoubtable his keen interest in computing. Mohammed has been interested in computing and related subjects for many years and has decided that he would like to make a career in the industry. 
+        </p>
+        <br>
+        <p>
+                During his free time, Mohammed loves to play video games, most recently he has become engrossed in Assassin’s Creed: Origins. When he isn’t gaming, he is likely to be keeping active by participating in sports activities and when he cannot take part he will be watching events on the television, his main interests are football and tennis but on occasion he will delve into other sports. During long periods of downtime, he loves to travel and see different places around the world.
+        </p>
+        <br>
+        <p>
+                After he has finished studying, he is hoping to get a successful job within the computing industry, preferably something in software engineering but he isn’t one hundred percent sure yet. 
+        </p>
+        <figure>
+            <img src="images/niyazpic.jpg" alt="Image of team members">
+            <figcaption>Image of team member Mohammed</figcaption>
+        </figure>
+
+    </article>
+
+    <article class="aboutus_article" id="contactform">
+        <h3>[Contact Us]</h3><br>
+  
+          <form id="contact" method="post"> <!-- form tag with the id of contact, method is how the submission will be sent -->
+
+              <h5>Contact Us</h5> <!-- h5 heading tags -->
+              <p class="ptitle">Fill out the form below, and we will reply shortly.</p> <!-- h4 heading tags -->
+              <div> <!-- generic container tag (does nothing special to the content inside) -->
+                      <input type="text" name="firstname" placeholder="First Name"> <!-- input field that accepts a text value, all the same below just for different fields, I used the following site for help with the code: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form -->
+              </div>
+      
+              <div>
+                      <input type="text" name="surname" placeholder="Last Name">
+              </div>
+      
+              <div>
+                      <input type="text" name="email" placeholder="Email Address">
+              </div>
+      
+              <div>
+                      <input type="text" name="phone" placeholder="Telephone Number">
+              </div>
+      
+              <div>
+                      <input type="text" name="address" placeholder="Address">
+              </div>
+      
+              <div>
+                      <input type="text" name="city" placeholder="City/Town">
+              </div>
+      
+              <div>
+                      <input type="text" name="postcode" placeholder="Postcode">
+              </div>
+      
+              <div>
+                      <input type="text" name="websiteadd" placeholder="Website URL">
+              </div>
+      
+              <div>
+                      <textarea id="contactmsg" name="message" placeholder="Your Message"></textarea> <!-- text box that accepts text input from the user -->
+              </div>
+      
+              <div id="button">
+                      <button name="button" type="submit">Submit</button> <!-- button that the user can press (submits the form) -->
+              </div>
+          </form> <!-- end of form tag -->
+
+          <p class="ptitle">Our address on Google Maps</p>
+
+          <div id="map"></div> <!-- creates a google map on the site, whole map section is code provided by google (code from https://developers.google.com/maps/documentation/javascript/adding-a-google-map) -->
+          <script>
+            function initMap() {
+              var uluru = {lat: 52.250912, lng: -0.890502};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+             }
+               </script>
+               <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDARsp5y89xdPuWRlAW-Eochm69d10Ps6E&callback=initMap"> </script> <!--the api key I generated and the end of map section -->
+        
+    </article>
+  </section> <!-- end of the section -->
+
+
+  <section class="glossary" id="glossarylink"> <!-- next section begins -->
+    <article class="glossary_article"> <!-- another new article -->
+            <h3>[Glossary Terms One]</h3><br>
+                                                <!-- lots of hyperlinks to other sites below, where i got my information from, all hrefs are links -->
+            <p>1.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Alternative Text</a> – Alternative text is used with any images that are displayed on a site, if for some reason the image cannot be shown then the alternative text will be displayed instead. Alternative text is often called alt text and can be whatever the developer wants it to be, but in most cases it should be a description of what the image shows.</p><br>
+            <p>2.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attribute</a> – The elements used in HTML have their own attributes. The attributes are values that configure the elements they are contained in, and in some cases change the way the element behaves in order to meet the user’s needs. </p><br>
+            <p>3.	<a class="glossaryhyperlink" href="http://www.rhc.uk.com/vector-bitmap-graphics/">Bitmap (raster)</a> – Bitmap graphics are made up of lots of different pixels, this is why when you zoom in on a bitmap image it goes all pixelated. GIFs are made using an array of pixels so they are considered to be bitmap, so are JPG and PNG.</p><br>
+            <p>4.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Box Model</a> – The box model is a type of layout in CSS, every element is represented by a box. CSS can be used to set the size, position and properties of the boxes. </p><br>
+            <p>5.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">Cascading Style Sheet (CSS)</a> – CSS is a style sheet language that is used in conjunction with HTML, essentially the website is created using HTML but the presentation side is handled by CSS. Using CSS a plain webpage can be presented however the user likes, if they want to change the background colour or font size they can using CSS.</p><br>
+            <p>6.	<a class="glossaryhyperlink" href="https://developer.chrome.com/devtools">Chrome DevTools</a> – Chrome DevTools are basically a set of debugging tools that web developers can use to take a deeper look at the inner workings of websites. Chrome DevTools can be utilised to find various errors or issues in a website and get useful information on how to optimise code. </p><br>
+            <p>7.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">Class</a> – A class in HTML is a global attribute that can be used to give an element one or more class names. The class will keep a space separated list of these class names. An example of this would be: div class="classname", replace the “classname” with the name you wish to give the class.</p><br>
+            <p>8.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML">Debugging</a> – Debugging is the process of finding and fixing errors in HTML or CSS. There are two types of errors: syntax errors (problems with spellings) and logic errors (use of the wrong code). Generally the web developer would use tools that check the code for errors and then they would resolve the errors, but they can also try to run the code and see if it is displayed how they intended, if it isn’t then the code may need to be fixed. </p><br>
+            <p>9.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax#CSS_Declarations">Declaration</a> – A declaration in CSS is a single rule that is used to specify what property of the element you wish to style. Example, h1 { color: blue; } changes the colour of the element “h1” to blue, the declaration is the “color;blue;” section.</p><br>
+            <p>10.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Display</a> – Display is a CSS property that identifies the type of rendering box used to display an element. The display property value can be set to none which will make it so the element is not rendered at all. There are also other display property values that make the element render in different ways. </p><br>
+            <p>11.	<a class="glossaryhyperlink" href="http://www.jonathantneal.com/blog/understand-the-favicon/">Favicon</a> – A favicon is a small icon that is displayed in the browser next to the address bar when a site is accessed. Ideally the favicon should be related to the site so that users do not get confused. Favicons can be several different image formats but the three that are most widely used are: ICO, PNG, and GIF. Favicon is short for favourite icon.</p><br>
+            <p>12.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">File path</a> – The file path is the address that is used to locate a file, without the file path it would be impossible to find the file that you are looking for. File paths are often used when displaying images on websites, the image can only be displayed if the correct pathway to the image is provided. </p><br>
+            <p>13.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/Flex">Flex</a> – Flex is a CSS property that dictates how an item will grow or shrink to fit within a flex container. The flex container can be any element that acts as a container for other items. The flex property allows web developers to create flexible and responsive webpages without using float or positioning. </p><br>
+            <p>14.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Float</a> – Float is a CSS property that is used to identify whether an element should be placed on the left or right of its container. Text will wrap around the container if it has been set to float left or right, if the container is set to float left then text will attempt to wrap to the right of the container and Vis versa. </p><br>
+            <p>15.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">Forms</a> – A form can be created in HTML and then improved visually with CSS. A form is a collection of fields that can be used to gather information from the user. Forms are generally used on websites in the contact information page, the user can fill out the form to give the website owner information.</p><br>
+            <p>16.	<a class="glossaryhyperlink" href="https://www.unleashed-technologies.com/blog/2014/08/01/what-github-and-how-can-it-benefit-your-development-team">GitHub</a> – GitHub is a hosting site that web developers use to allow others to test their site and review their code. GitHub is also used by development teams to review code and work through problems together as it has collaboration features that allow teams to share work between each other. </p><br>
+            <p>17.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML5</a> – A mark-up language that is used to display content on a webpage. HTML is the latest version of the HTML language. </p>
+    </article>
+    
+    <article class="glossary_article">
+            <h3>[Glossary Terms Two]</h3><br>
+              
+            <p>18.	<a class="glossaryhyperlink" href="https://www.britannica.com/technology/hypertext">Hypertext</a> – Hypertext is a form of text that uses links to take the user to other pieces of text, the links to other pieces of text are often called hyperlinks.</p><br>
+            <p>19.	<a class="glossaryhyperlink" href="http://www.linfo.org/icon.html">Icons</a> – Icons are classified as pictograms that are commonly used on mobile devices instead of text. Icons are like small images that are used to replace text and can be placed anywhere on a webpage, but in most cases they are used like buttons for navigation such as the home button on most webpages.  </p><br>
+            <p>20.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/bm/docs/Web/JavaScript">JavaScript</a> – JavaScript is a language that is used in tandem with HTML, it is mostly used on the client side but certain packages can offer server side support. JavaScript had originally been created for use a server side language by Brendan Eich. The primary use of JavaScript is to make webpages interactive for the user and provide them with online programs such as video games. </p><br>
+            <p>21.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/jQuery">JQuery</a> – jQuery is a JavaScript library that is used to make document traversal and manipulating much simpler. It also makes event handling, animation, and Ajax much easier to use. JQuery is used by lots of web developers as it simplifies and makes it easier to do some tasks.</p><br>
+            <p>22.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">Link</a> – A link in HTML is an element that contains a relationship between the current web document and an external source. It basically creates a connection between two locations.</p><br>
+            <p>23.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">Lists</a> – There are three main types of lists in HTML, the first is ordered lists which list content in a numbered order, the second is unordered lists which list content in bullet points, and the third is definition lists which display content with a heading and have the definition underneath. Another type of list is the nested list which is just a list within a list.</p><br><br>
+            <p>24.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">Media Queries</a> – Media Queries tie into RWD, they make it so sites can adapt to different display sizes. The media query works by checking the screen size and then changing the sites layout depending on that size. </p><br>
+            <p>25.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">Navigation (nav)</a> – Nav is an element used in HTML that’s main purpose is to provide navigation around a site or page. The nav element can be used to contain an unordered list that is filled with links to other pages or documents, then with CSS the unordered list can be presented in an appealing manner.</p><br>
+            <p>26.	<a class="glossaryhyperlink" href="https://www.tutorialspoint.com/html/html_elements.htm">Nested elements</a> – A nested element is an element within an element. An example of a nest element would be a link to an external site within a paragraph element on a webpage.</p><br>
+            <p>27.	<a class="glossaryhyperlink" href="http://whatis.techtarget.com/definition/Photoshop">Photoshop</a> – Photoshop is a graphics editor created by Adobe Systems, Photoshop is a raster graphics editor which means that it can be used for JPEG, PNG, GIF, and TIFF formats. Photoshop was originally conceived by Thomas and John Knoll in 1988 and has since become one of the most used and most popular raster graphics editors on the market. </p><br>
+            <p>28.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">Positioning</a> – Positioning is used to remove elements from the layout flow of a document. Once removed these elements can be set to behave in certain ways such as sitting next to each other on the page or on top of each other. Depending on the property value that the developer specifies the behaviour of the element will change.</p><br>
+            <p>29.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax">Properties (CSS)</a> – In CSS the properties of an element are the ways that you can style it. You can choose what properties you want to alter in your rule. Example, h1 { color: blue; }, the property is the “color” section of the rule set, another potential property could be “font-size” which would alter the font size of the “h1” element.</p><br>
+            <p>30.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax">Property value (CSS)</a> – The property value is the part of the rule that actually alters the elements style, the user enters the value they want. Example, h1 { color: blue; } the property value is the “blue” section, although it could be another colour such as red or black. </p><br>
+            <p>31.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements">Pseudo class</a> – In CSS a pseudo class can be added to a selector to specify the state of the element. Basically the pseudo class can be added to a selected element to make it do something if it is in a certain state. An example of this would be: nav:hover {color: red}, the pseudo class is the “:hover” section and it essentially just changes the colour of the navigation bars text when the user hovers the mouse over it.</p><br>
+            <p>32.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/Apps/Progressive/Responsive">Responsive web design (RWD)</a> – RWD is a method of web design that is aimed at making websites display properly on a wide variety of devices. A website that uses RWD will adapt to changes in the screen size to ensure that all devices can access and see the same page content. </p><br>
+            <p>33.	<a class="glossaryhyperlink" href="https://www.lifewire.com/what-is-a-root-folder-or-root-directory-2625989">Root directory</a> – The root directory is the folder that contains all of files required for the website to function. Before building the website a suitable root directory should be established, good practice dictates that the root directory should ideally be called “htdocs”. Everything needed for the website such as images, sound files, the CSS and the HTML document should all be placed in the root directory (htdocs folder). </p><br>
+            <p>34.	<a class="glossaryhyperlink" href="https://stackoverflow.com/questions/2126174/what-is-sandboxing">Sandbox</a> – A sandbox is a place where you can practice and test your own code or other people’s code. The sandbox acts as an isolated testing area where code can be created and used without actually causing any real problems. Codepen.io is a great example of an online sandbox.</p>
+           
+    </article>
+
+    <article class="glossary_article" id="glossarycol3">
+            <h3>[Glossary Terms Three]</h3><br>
+        
+            <p>35.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector">Selector</a> – The selector in CSS is used to identify the part of the HTML that should be styled. The selector goes at the start of the rule set and is the element name from the HTML. Example HTML element: h1 … /h1, CSS selector: h1 {…}.</p><br>
+            <p>36.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">Semantic</a> – The semantic is the meaning behind a piece of code, for example in HTML it could be what role an element has. An example of this would be the “h1” element in HTML, it gives any content within it the role of being the top heading of the page. </p><br>
+            <p>37.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/syntax">Syntax</a> – A set of rules that dictate what symbols can and cannot be used by a language, and in some cases the combination of these symbols. Each language has its own syntax, so each symbol has a different meaning and use in different languages. Example, how to comment in HTML: !-- comment --, how to comment in CSS: /* comment */.</p><br>
+            <p>38.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/element">Tag/Elements</a> – There are two types of tags in HTML, opening tags and closing tags. The opening tags go at the start of a section of content, while the closing tags go at the end. The tags essentially act like containers for the information that goes between them. Tags can sometimes be referred to as elements. Example, opening tag: h1 content goes here /h1 closing tag.</p><br>
+            <p>39.	<a class="glossaryhyperlink" href="https://www.computerhope.com/jargon/e/editor.htm">Text Editors</a> – A piece of software/tool that allows the user to view and edit HTML and CSS. An example of a software based text editor would be Visual Code, while an online example would Thimble by Mozilla. </p><br>
+            <p>40.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transformations</a> – Transformations in CSS are used to translate, rotate, skew, and scale elements. The transform property in CSS can be used to perform the transformations. An example of a simple transformation would be: transform: rotate(0.5turn); this would rotate the element by 180 degrees (turn it upside down). </p><br>
+            <p>41.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">Transitions</a> – A transition in CSS can be used to make changes in property values happen smoothly. Transitions are basically used to make changes that would normally be noticeable, occur seamlessly and discreetly. </p><br>
+            <p>42.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">Universal selector</a> – In CSS there is a selector type that can be used match any element type, the universal selector is represented by an asterisk (*) and when used it will select all elements and set properties for all of them. </p><br>
+            <p>43.	<a class="glossaryhyperlink" href="https://www.usertesting.com/blog/2016/04/27/ui-vs-ux/">User Interface (UI)</a> – The UI is an interface that allows the user to interact with the website, it takes what the computer can understand and translates it into a format that the user can understand, and it also works the other way round by converting what the user inputs into a form that the computer will understand. Without the UI the user could not interact with the computer as easily.</p><br>
+            <p>44.	<a class="glossaryhyperlink" href="https://validator.w3.org/about.html">Validator</a> – A validator checks web documents to ensure that the mark-up validity is good. The validator checks the web document for errors that could potentially cause problems when trying to display the web document. When the validation process is complete, any errors will be displayed and the developer of the web document can make changes to fix the errors. </p><br>
+            <p>45.	<a class="glossaryhyperlink" href="http://www.rhc.uk.com/vector-bitmap-graphics/">Vector</a> – Vector graphics are made up of paths which means they look clearer when zoomed in on. Vectors are generally used for logos, charts, and icons among other things. Due to the fact that vector graphics are not made up of pixels, when enhanced they still retain the same sharp and clear edging they did before being zoomed in on. </p><br>
+            <p>46.	<a class="glossaryhyperlink" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Version control</a> – Version control is a system that can be used to records any changes to a file over a period of time and then at a later date you can recall specific versions of the file, before or after a particular change had been made. </p><br>
+            <p>47.	<a class="glossaryhyperlink" href="https://developers.google.com/web/updates/2015/01/What-the-Viewport">Visual Viewport</a> – The layout viewport is a virtual screen, it is much larger than the screen size of the device that is viewing it. The visual viewport is the area of a webpage that can be seen on a device, the visual view port essentially puts part of the layout viewport into frame so that the user can see it on their screen.</p><br>
+            <p>48.	<a class="glossaryhyperlink" href="https://www.w3.org/Consortium/">W3C</a> – A web standards body that is responsible for setting the rules that web developers must follow when using Hypertext and the Web. Also known as World Wide Web Consortium, headed by Sir Tim Berners-Lee.</p><br>
+            <p>49.	<a class="glossaryhyperlink" href="https://www.webstandards.org/learn/faq/index.html">Web Standards</a> – The rules and guidelines that web developers must follow when creating a website. The use of standards helps to encourage developers to be consistent with the code they produce.</p><br>
+            <p>50.	<a class="glossaryhyperlink" href="https://developer.mozilla.org/en-US/docs/Glossary/WHATWG">WHATWG</a> – Another web standards body that sets standards for Hypertext and the Web. Started in the late 90s in response to the slow movement of the W3C. WHATWG is made up of developers that have worked in the industry for many years. Also known as Web Hypertext Application Working Group.</p>
+        
+    </article>
+  </section>
+
+
+  <section class="comparison" id="comparisonlink">
+    <article class="compare_article">
+        <h3>[Comparison]</h3><br>
+        
+            <h5><a href="https://www.cwjobs.co.uk/job/web-developer/client-server-job78347612?entryurl=%2fjobs%2fweb-developer%2fin-london%3fradius%3d30%26s%3dheader%2378347612">Web Developer Client Server:</a></h5> <!-- hyperlink to an external website, like the ones in the glossary section above-->
+                <p>
+                    A web developer position at Client Server which is a company located in City, London. The company that is offering the job is a financial spread betting firm and they are looking for a skilled web developer to join their marketing technology team.<br><br> 
+                    The job is looking for a web developer that has good knowledge of JavaScript, HTML5, and CSS3. The job also states that some experience with the Salesforce Marketing Cloud RESTful API is ideal. Client Server are looking for the applicant to be a team player who can work well with others on collaborative tasks and has excellent communication skills.<br><br> 
+                    The job doesn’t seem to require any form of university degree and they haven’t stated it in their requirements sections. The salary for the job is listed as being between £35,000 and £45,000, but there are several benefits available according to the company. The benefits package includes the ability to add more holiday time, contribute to a pension, gain access to private health care and more which the company hasn’t listed on the page. </p>
+                    <br>
+            <h5><a href="https://www.cwjobs.co.uk/job/web-developer/oho-group-ltd-job78352590?entryurl=%2fjobs%2fweb-developer%2fin-london%3fradius%3d30%26s%3dheader%2378352590">Web Developer Oho Group Ltd:</a></h5>
+                <p>
+                    A web developer position at Oho Group Ltd. which is a company located in Westminster, London. The company offering the job is an events management company and they are looking for a web developer to work on the creation/design of websites and to develop Content Management Systems.<br><br>
+                    Oho Group Ltd. asks that anyone applying for the job have commercial experience in web development and be able to use PHP, JavaScript, HTML5, and CSS3. The job also states that ideally the applicant should also have knowledge of NodeJS and AngularJS, as well as having some experience with Linux administration. The job asks that the applicant have good communication skills.<br><br>
+                    The job does not ask for any university degree, but instead requires the applicant to have worked in the industry before. The salary range for this job is between £30,000 and £40,000, the job advertisement doesn’t say anything about benefits or bonuses. </p><br>
+    </article>
+
+    <article class="compare_article">
+            <h3>[Comparison & Conclusion]</h3><br>
+      
+                <h5><a href="https://www.cwjobs.co.uk/job/web-developer/financial-data-management-job78263930?entryurl=%2fjobs%2fweb-developer%2fin-london%3fradius%3d30%26s%3dheader%2378263930">Web Developer/Graphic Design Financial Data Management:</a></h5>
+                    <p>
+                        A graphic design/web developer position at Financial Data Management (FDM) which is a company located in Canning Town, London. FDM is a print and mail company and they are looking for a graphic design/web developer to design and build websites amongst other things.<br><br>
+                        The job requires that the applicant has an understanding of HTML5 and CSS3, as well as good PHP and JavaScript skills. FDM would like the applicant to be able to design and build websites from scratch, and have experience in graphic design.<br><br>
+                        The job page states that the applicant should have great time management and organisational skills, as well as being able to communicate effectively. It also asks that the applicant be very creative and innovative.<br><br> The job page doesn’t state anything about having a university degree, but it does ask that the applicant have two or more years’ experience. The salary range for this particular job is between £23,000 and £27,000 with some additional benefits which the company doesn’t list on the job page. 
+                    </p>
+                    <br>
+                <h5>Conclusion:</h5>
+                    <p>
+                        Out of the three jobs that have been researched only one displayed any skills in its heading section, the one that did was the Client Server job. The Client Server job heading included JavaScript, HTML, and CSS, while it was the only job to include these skills in the heading all the other jobs also required the applicant to possess them. 
+                    </p>
+                    <br>
+                    <p>
+                        None of the jobs that I researched required any form of university degree, but in place of it they required that the applicant have years’ of experience in the industry. The reason behind this is likely due to the fact that the jobs that have been researched are not junior level roles so the applicant is required to know more about the industry, if the jobs had been junior level ones then it would be highly likely that they would require some form of university degree instead of experience in the industry. 
+                    </p>
+                    <br>
+                    <p>
+                        The jobs that I reviewed all had different salary ranges, but from the three the lowest salary was £23,000 while the highest was £45,000. The salary seems to be affected by the part of London the company is located in, the closer to the centre you get the higher the salary is. This is likely due to larger companies being located nearer to the centre while smaller ones are further away, the larger companies can afford to pay more in order to get the best employees.
+                    </p>
+                    <br>
+            
+    </article>
+
+    <article class="compare_article" id="comparecol3">      
+        <h3>[Comparison Conclusion Continued]</h3><br>
+  
+            <h5>Conclusion continued:</h5>
+                <p>
+                    All of the jobs stated that the applicant should have excellent communication skills and be able to work as a team member, this is likely due to web developers collaborating on tasks and working together to complete projects. Another non-technical skill that came up was good time management and organisational skills, this is likely to be very important to all companies as without these skills work might be late or below their required standards. Two skills that seem important to jobs that involve design are creativity and innovation, this is likely the case because companies want their designs to be unique and imaginative, not unoriginal and uninteresting. 
+                </p>
+                <br>
+                <p>
+                    All the jobs that were researched required the applicant to have knowledge and experience with JavaScript, HTML5, and CSS3, but there were some other technical skills that came up a lot. The Client Server job required the applicant to have knowledge of certain APIs and it is likely that other jobs will require knowledge of APIs as they can be an important part of web development.<br><br>
+                    One of the jobs was looking for applicants with knowledge of PHP which is a server scripting language, many companies are likely to use PHP or other server scripting language so it is a useful skill to have. Another job asked for applicants with skills relating to JavaScript frameworks such as NodeJS (server-side) and AngularJS (front-end), it is likely that some jobs will require you to have knowledge of both front-end and back-end languages Another job I researched asked the applicant to have Linux administration skills, this is unsurprising as a lot of companies have started to use Linux as their operating system instead of Windows, due to improved security and better customisation.
+                </p>
+                <br>
+                <p>
+                    Overall from researching the three web development jobs, I have found out about some of the most important non-technical skills like having good communication, and I have also found out about some of the most sort after technical skills that are present in most web development jobs. 
+                    I have found that most mid to high level web development jobs do not require a university degree and instead require years’ of industry experience and knowledge, I have also found that the opposite is true for junior level jobs. During my research the final thing I found is that the salary range for each job can be very different with some offering a salary in the low to high £20,000 mark while others offer nearly £50,000.
+                </p>
+                <br>
+        
+    </article>
+  </section>
+
+  <section class="resource" id="resourcelink">
+
+    <article class="resource_article">
+        <h3>[HTML Resources]</h3><br>
+        
+            <h6><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Mozilla Developer:</a></h6>
+                <p>Mozilla developer is a great site for learning HTML5. It contains up to date and reliable content which can be hard to find elsewhere on the internet.<br><br> The publisher of the site, Mozilla is a trustworthy source for information as they develop their own web browser called Firefox. The content on the site is very useful, it has text descriptions, images and links to the code on codepen so that the reader can play around and test the code themselves. </p>
+                <br>
+            <h6><a href="https://stackoverflow.com/questions/tagged/html">StackOverflow.com:</a></h6>
+                <p>StackOverflow is a very useful resource for learning HTML5. The site contains a massive range of guides and tips that are very helpful when trying to learn HTML5. The site is comprised of various discussions very much like a forum site, so you can ask questions and receive answers from first time developers or experts in HTML5. <br><br> I found that I mainly used StackOverflow to find solutions to problems and to understand some of the more complex features of HTML5.</p>
+                 <br>
+            <h6><a href="https://www.youtube.com/watch?v=9gTw2EDkaDQ">YouTube:</a></h6> <!-- link to an external video -->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9gTw2EDkaDQ?rel=0" allowfullscreen></iframe> <!-- sets up the video (code from https://support.google.com/youtube/answer/171780?hl=en-GB) -->
+
+                <p>A very good YouTube video that goes through the basics of HTML5. The video is fairly recent, it has a high viewer count and a good like to dislike ratio.<br><br> This video might not be as trustworthy as a video on Lynda.com or a tutorial on Mozilla Developer, but it is a useful resource to use alongside the other resources for some extra information.</p>
+        
+    </article>
+
+    <article class="resource_article">
+      <h3>[CSS Resources]</h3><br>
+      
+        <h6><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS">Mozilla Developer:</a></h6>
+            <p>Mozilla developer offers tutorials about CSS and they are quite useful. As I have said previously, Mozilla developer offers reliable content that is updated regularly. Mozilla is a known brand, they have experience in the web development industry and publish trustworthy information.<br><br> Like with their HTML5 content, the CSS content on the site is very helpful and useful, it contains text descriptions, images and links to the code hosted on codepen.</p>
+            <br>
+        <h6><a href="https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html">Lynda.com:</a></h6>
+             <p>Lynda.com is a very useful resource for learning CSS3. The site contains a massive selection of videos that explain different topics, some of the videos are free while others require payment to view.<br><br> All the content on Lynda.com is regularly updated and is from a trustworthy source, each video is created by a certified instructor who has experience in the topic area. </p>
+            <br>
+        <h6><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C">YouTube:</a></h6>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKoajPPWpmo?rel=0" allowfullscreen></iframe> <!-- sets up the video (code from https://support.google.com/youtube/answer/171780?hl=en-GB) -->
+
+            <p>A great YouTube video playlist that goes through the basics of CSS3. The video is only a couple of years old and it has a high viewer count which is generally a good sign for YouTube tutorials.<br><br> Having seen some of the videos I found them to be very engaging and interesting to watch, they contained lots of useful information. I found that the videos were best watched along with some of the Lynda.com videos and the Mozilla Developer tutorials. </p>
+            <br>
+      
+    </article>
+
+    <article class="resource_article" id="resourcescol3">
+        <h3>[Design Resources]</h3><br>
+        
+            <h6><a href="https://www.lynda.com/Responsive-Design-training-tutorials/1357-0.html">Lynda.com:</a></h6>
+                <p>Lynda.com is a useful resource for learning not only CSS3 and HTML5, but also website design. The site contains a massive selection of videos that explain different topics, some of the videos are free while others require payment to view.<br><br> All the content on Lynda.com is regularly updated and is from a trustworthy source, each video is created by a certified instructor who has experience in the topic area. The responsive design tutorials contain useful information about designing websites that respond to a user’s specific device. Responsive web design is something that most websites are required to design for as mobile devices are used more and more.</p>      
+                <br>
+            <h6><a href="https://material.io/guidelines/">Material.io</a></h6>
+                <p>Material.io is a useful resource for the design aspect of website creation. The site contains a wealth of information about the best ways to design a modern website. It features guidelines on how to make websites more mobile friendly and how to design for mobiles before any other device. <br><br> Having seen the material available on this site, I would highly recommend that before designing a website you should first view the information on the site and take it on board when designing your site.     </p>
+                <br>
+            <h6><a href="https://www.youtube.com/watch?v=zO4DFCjgdx0">YouTube:</a></h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zO4DFCjgdx0?rel=0" allowfullscreen></iframe> <!-- sets up the video (code from https://support.google.com/youtube/answer/171780?hl=en-GB) -->
+                <p>A great collection of videos on YouTube that looks at design and CSS layout on a website. The videos are a couple of years old, but they contain information that is still relevant and useful. The videos have a high viewer count and most of the comments about the videos are positive.<br><br> Having seen some of the videos that this channel has made before, I believe that the videos are very interesting to watch and contain helpful information.</p>
+                <br>
+        
+    </article>
+  </section>
+
+  <section class="design" id="designlink">
+    <article class="design_article">
+        <h3>[Design Inspiration]</h3><br>
+        
+            <h5><a href="https://dribbble.com/shots/1503257-Web-Design">Website Design Inspiration One:</a>    </h5>
+                <figure>
+                    <img src="images/inspiration1.png"  alt="Image of dribbble.com/shots/1503257-Web-Design"> <!-- image from images folder with alt tags, screenshot from https://dribbble.com/shots/1503257-Web-Design -->
+                    <figcaption>Image of HERSOG Architecture Bureau</figcaption></figure>
+                    <br>
+            <h5><a href="http://rockgroup.themerex.net/">Website Design Inspiration Two:</a></h5>
+                <figure>
+                    <img src="images/inspiration2.png" alt="Image of rockgroup.themerex.net"> <!-- image from images folder with alt tags, screenshot from http://rockgroup.themerex.net/ -->
+                    <figcaption>Image of Rock Group Infographic Theme</figcaption></figure>
+                    <br>
+        
+    </article>
+
+    <article class="design_article">
+        <h3>[Design Inspiration Continued]</h3><br>
+        
+            <h5><a href="https://www.siteinspire.com/websites/7776-dot">Website Design Inspiration Three:</a></h5>
+                <figure>
+                    <img src="images/inspiration3.png" alt="Image of siteinspire.com/websites/7776-dot"> <!-- image from images folder with alt tags, screenshot from https://www.siteinspire.com/websites/7776-dot -->
+                    <figcaption>Image of Dot Legal Services</figcaption>
+                </figure>
+                <br>
+    
+            <h5><a href="https://www.thebestdesigns.com/designs/abingworth">Website Design Inspiration Four:</a></h5>
+                <figure>
+                    <img src="images/inspiration4.png" alt="Image of www.thebestdesigns.com/designs/abingworth"> <!-- image from images folder with alt tags, screenshot from https://www.thebestdesigns.com/designs/abingworth -->
+                    <figcaption>Image of Abingworth Biotechnology</figcaption>
+                </figure>   
+                <br>
+        
+    </article>
+
+    <article class="design_article" id="designcol3">
+        <h3>[Design Conclusion]</h3><br>
+        
+            <p>
+                The next segment will draw some conclusions about the design process of my website. There were four website designs that I really loved to use and look at, each of the sites had their own positive and negative aspects so when I designed my website I decided I would try to emulate some of these aspects. Originally my design had lots of different colours, but after looking at the design of other sites I realised that it would be far better to only use a couple of colours and mainly just focus on different shades of the same colour.
+            </p>
+            <br>
+            <p>
+                 My original design for the website would have been a multi-page design but after looking at some single page designs I decided that a single page design is very appealing and more of a modern concept for a website. The multi-page design has been around since websites were first developed, but the single page design has recently become very popular and for good reason, I believe it makes a site feel current. My original design featured similar navigation to my final design, but due to using a single page design I had to make the navigation bar fixed. Most of the single page designs I have seen use fixed navigation as it allows the user to access the navigation no matter where they are on the page. 
+            </p>
+            <br>
+            <p>
+                The first design for the page had been created without input from my team member, the reason for this was to see what design I could create without help from others. I worked with my team member to review my first design and come up with all the pros and cons of the design, once I had the good and bad of the site I proceeded to create a second design that improved on the bad aspects. The designs were reviewed and improved until my team member and I found them to be adequate, we also looked at the website designs that inspired my designs and found what was good and bad about them, this ensured that I would only take inspiration from the good parts of the design while making sure to avoid adding any of the bad parts.
+            </p>
+            <br>
+            <p>
+                 In order to improve my design I would consult my team member before adding or removing a feature from the design, by doing this I could get another opinion on the decision and avoid making a mistake. My original design was a multi-page website that used lots of different colours, but with the help of my team I was able to improve the design so that it wasn’t grounded in the past and had a more modern and up-to-date feel. 
+            </p>
+            <br>
+        
+    </article>
+
+  </section>
+
+
+  <section class="conclusion" id="conclusionlink">
+
+     <article class="conclusion_article">
+      <h3>[Conclusion]</h3><br>
+      
+        <p>Over the past nine weeks I have been learning web development and in this section I will reflect upon my time learning HTML5 and CSS3. I went into learning about web development without having much knowledge of the topic, in school and college I had only designed websites using website creation sites such as Wix.com.<br><br> Learning HTML5 and CSS3 had been a new experience for me as I had never used a mark-up or styling language before. I found learning HTML5 to be very enjoyable and not too difficult, I believe this is due to the fact that I have some experience with programming languages namely VB6 and Python. I found that some of the skills I picked up while learning VB6 and Python were transferrable and made the process of learning HTML5 much easier.<br> I believe that after my first term of learning web development, I have learnt the basics of HTML5 and could now use what I have learn confidently, although I have only scratched the surface when it comes to learning HTML5.</p><br>
+        
+        
+        <p>During the course of the first term, I also started to learn CSS3 which is used in conjunction with HTML5. I found CSS3 to be quite hard to learn in comparison to HTML5, it was a lot easier to mess up the CSS code than the HTML. Trying to get the HTML to look aesthetically pleasing using the CSS was very hard, I could make it look better than black and white plain text but I didn’t have the knowledge or understanding of CSS to make it look like a professional site. It took several lines of code in the CSS to get the HTML to look even slightly appealing. By the end of the term I learnt how to use CSS3 at a basic level, I believe that I can use it to make a site look moderately appealing but I still have a lot to learn before I can use CSS effectively.</p><br>
+        
+        <p>Originally I had planned to make a multi-page website but I eventually decided to make a single page site. I have found that a single page site is far better when you have less content to display and becomes quite hard to style when you have lots of content. I also found that the 1 2 3 column layout was very hard to create on a single page design. The 1 and 3 column parts were quite easy to set up but the 2 column part I found to be challenging. I believe with more experience and knowledge it would have been a lot easier to set up in a 1 2 3 column layout. </p><br>
+        
+        <p>Once I had started to put content onto the site I found that the pages were far too long in height, I initially decided to set the text so that scroll bars appeared and the user could scroll through the text, but I found that it hindered navigation and looked out of place on my site. I resolved the issue in the end by reducing the font size to a more appropriate level. </p><br>
+
+        <p>Overall the past term has been very successful, I have learnt the basics of both HTML5 and CSS3. I can now create a basic site using HTML5 and can make a site look more appealing using CSS3. I have learnt a lot about website design while I was learning HTML and CSS, I now have knowledge of material design which will help me when I come to designing websites in the future.<br><br> My experience with my team member has been very enjoyable, I believe that working with another person had helped me to create a good design for my website as my teammate constantly gave me feedback about the positives and negatives of my designs. Some feedback from teammates can really help to refine designs and ensure that the end product looks attractive and works perfectly. </p><br>
+        
+        <p>I have come to the realisation that a single page design is not optimal for this type of content and that a multiple page design would have been easier to style. I found it very hard to style the single page design, I believe that a multiple page design would have looked far more attractive. In future I would stick to a multiple page design if I needed to display lots of content and a single page design if I had minimal content to display.</p><br>
+        
+        <p>In order to create the site I needed to borrow some code from various sources on the internet, the next section will look at the code I borrowed and why I needed to borrow it. The first piece of code I borrowed was from the Google Fonts API site, I needed this code to setup the font of my site. The code I borrowed linked my site to the font that I wanted to use. </p><br>
+        
+        <p>The next section of code I borrowed was from font awesome, I borrowed the code as I needed it to setup the icon library. Without the code I wouldn’t have been able to put icons on my site and the appeal of my design would have suffered from it.</p><br>
+        
+        <p>The next bit of code I borrowed related to the Google Maps map, I borrowed the code as they recommended that you should. I needed the code to display a map on my contact page, so without the code my contact page would be very bare and incomplete.</p><br>
+        
+        <p>I borrowed code for each of the YouTube videos on my site, the code came directly from YouTube as they suggest you use their code. I did however slightly alter the code to add the styling to the CSS instead of it being in the HTML like they suggested. Without this code I wouldn’t have been able to include any of the YouTube videos that my resources page features.</p><br>
+
+        <p>I borrowed a large chunk of JavaScript from CSS-Tricks.com, this code enabled smooth scrolling on my site. I needed the code to make my site feel cleaner and smoother for the user, the smooth scrolling feature is key for a single page design so I needed to include it.</p><br>
+
+        <p>The last bit of code I borrowed was from Stackoverflow.com, this code was for my CSS and is basically a simple animation that fades the images in when the site is loaded. I borrowed the code because it makes my site look better, the images no longer pop in so it doesn’t look as odd. </p><br>
+        <br>
+      
+    </article>
+
+    <article class="conclusion_article">
+        <h3>[Wireframes]</h3><br>
+        
+            <h5>Sketch One:</h5>
+                <figure>
+                    <img src="images/sketch1.jpg" alt="Image of first sketch"> <!-- image from images folder with alt tags, photo taken by Tom -->
+                    <figcaption>Wireframe of initial design/layout</figcaption>
+                </figure> 
+            
+
+            <h5>Sketch Two:</h5>
+                <figure>
+                    <img src="images/sketch3.jpg" alt="Image of second sketch"> <!-- image from images folder with alt tags, photo taken by Tom -->
+                    <figcaption>Wireframe of the mobile layout</figcaption>
+                </figure> 
+        
+            <h5>Sketch Three:</h5>
+                <figure>
+                    <img src="images/sketch2.jpg" alt="Image of third sketch"> <!-- image from images folder with alt tags, photo taken by Tom -->
+                    <figcaption>Wireframe of the desktop layout</figcaption>
+                </figure> 
+    </article>
+
+    <article class="conclusion_article" id="conclusioncol3">
+      <h3>[Validator Evidence]</h3><br>
+      
+        <h5>W3C Validator Evidence HTML:</h5>
+            <figure>
+                <img src="images/validatorhtml.png" alt="Image of successful HTML5 validation"> <!-- image from images folder with alt tags, screenshot of W3C HTML validator website -->
+                <figcaption>Screenshot of W3C HTML5 Validator</figcaption>
+            </figure> 
+            <br>
+
+        <h5>W3C Validator Evidence CSS:</h5>
+            <figure>
+                <img src="images/validatorcss.png" alt="Image of successful CSS3 validation"> <!-- image from images folder with alt tags, screenshot of W3C CSS validator website -->
+                <figcaption>Screenshot of W3C CSS3 Validator</figcaption>
+            </figure> 
+            <br>
+      
+    </article>
+  </section>
+
+  <footer class="bottom_page"> <!-- footer tag, the bottom of the page -->
+      <h4>
+            [Welcome to the end of the page, Back whence you came!]
+      </h4>
+    <section class="bottomlink_section">
+        <ul>
+          <li class="bottomlink"><a class="bottomlinka" href="#toppage_link">Top</a></li> <!-- links to other areas of the site, similar to the nav -->
+          <li class="bottomlink"><a class="bottomlinka" href="#contactform">Contact Us</a></li>
+          <li class="bottomlink"><a class="bottomlinka" href="#glossarylink">Glossary Terms</a></li>
+        </ul>
+    </section>
+  </footer>
+
+    <script src="js/smooth-scroll.js"></script> <!-- relates to the JS code (from https://css-tricks.com/snippets/jquery/smooth-scrolling/) -->
+
+ </body> <!-- end of body tag -->
+
+</html> <!-- end of html tag, last tag of the html document -->
